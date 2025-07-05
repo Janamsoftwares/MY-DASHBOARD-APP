@@ -1,0 +1,30 @@
+{
+  "name": "drnet-admin-server",
+  "version": "1.0.0",
+  "description": "Dr.Net Admin Portal Backend Server",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "generate-hash": "node generate-password.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["admin", "authentication", "api", "drnet"],
+  "author": "Dr.Net Technology Labs",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "helmet": "^7.1.0",
+    "express-rate-limit": "^7.1.5",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.2",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
